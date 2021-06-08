@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Graphik LC Web Medium';
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+::placeholder{color: #848484}
+
+@font-face {
+    font-family: 'Graphik LC Web Medium';
+    src: url('font/12024.ttf');
+}
+
+@media screen and (max-width: 768px){
+    input, textarea, select{
+        width: 70vw !important;
+    }
+    
+    main.main_main img, aside{
+        display: none !important;
+    }
+}
+
+body{
+    background-color: rgb(66, 134, 165);
+}
+
+header.header_index{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0
+}
+
+.nav_main div{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav_main div.real{
+    display: flex ;
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_main a{
+    color: #fff;
+}
+
+a{
+    color: #000;
+}
+
+form.form_index{
+    display: flex;
+    flex-flow: column;
+    align-items: center
+}
+
+form.form_index input, form.form_index a, #change_section, textarea, .input_button_post{
+    border: 0;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 40vw;
+    box-shadow: 0 0 10px #888;
+}
+
+form.form_index input:focus{
+    box-shadow: 0 0 10px #0632b8;
+}
+
+form.form_index a, .input_button_post{
+    cursor: pointer;
+    box-shadow: 0 0 10px #888;
+    transition: background-color .15s;
+}
+
+form.form_index input[type="button"]:active, .input_button_post:active{
+    background-color: #888;
+}
+
+header.header_main{
+    background-color: #000;
+}
+
+nav.nav_main .ul{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav.nav_main .ul div{
+    display: flex;
+    cursor: pointer;
+    flex-flow: column-reverse;
+    padding: 10px;
+    user-select: none;
+}
+
+textarea{
+    height: 120px;
+}
+
+main.main_post{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+main.main_profile div div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: 40px 0;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+main.main_main{
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.div_post{
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.div_post_header{
+    display: flex;
+    align-items: center;
+}
+
+.div_post_header h3{
+    margin-left: 10px;
+}
+
+.block{
+    margin-bottom: 10px;
+}
+
+.div_post_image{
+    display: flex;
+    justify-content: center;
+}
+
+.input_button_post{
+    cursor: pointer;
+}
+
+.div_post_author_date{
+    text-align: center;
+    color: #a3a3a3;
+    margin-top: 20px;
+}
+
+.div_post_btn_read{
+    display: flex;
+    justify-content: center;
+}
+
+.div_post_text{
+    display: none;
+    user-select: none
+}
+
+footer{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    margin: 20px 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img_footer img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.main_labs{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 80vw;
+}

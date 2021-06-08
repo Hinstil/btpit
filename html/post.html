@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="shortcut icon" href="../img/archive.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JollyNews | Запостить</title>
+</head>
+<body>
+
+    <header class="header_main">
+        <nav class="nav_main">
+            <div class="ul">
+                <a href="main.html"><div class="lenta real">Лента<img src="../img/archive.svg" height="26" style="margin-bottom: 5px" alt=""></div></a>
+                <a href="profile.html"><div class="profile real">Профиль<img src="../img/user.svg" height="26" style="margin-bottom: 5px" alt=""></div></a>
+                <a href="post.html"><div class="post real">Добавить пост<img src="../img/add.svg" height="26" style="margin-bottom: 5px" alt=""></div></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main_post">
+        <form action="#" class="form_index">
+            <select id="change_section">
+                <option value="" selected disabled>Выберите категорию поста</option>
+                <option value="Игры">Игры</option>
+                <option value="Программирование">Программирование</option>
+                <option value="Технологии">Технологии</option>
+            </select>
+            <input type="text" class="post_title" placeholder="Введите заголовок поста">
+            <input type="text" class="post_subtitle" placeholder="Введите описание поста">
+            <textarea class="post_text" placeholder="Введите текст поста"></textarea>
+            <input type="text" class="post_img" placeholder="Вставьте ссылку на картинку">
+            <input type="button" value="Запостить" id="btn_post">
+        </form>
+    </main>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/js.js"></script>
+    
+</body>
+</html>
